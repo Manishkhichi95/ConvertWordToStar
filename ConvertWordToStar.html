@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="pass">
+    <!-- //onkeyup="change(event) -->
+    <button onclick="pass()">click</button>
+</body>
+<script>
+    var pas = document.getElementById("pass");
+    var arr = [];
+    // function change(event){
+    //    var a =event.target.value;
+    //    console.log(a)
+    //    arr.push(a);
+    //    console.log(arr)
+       
+    //    var m = arr.map((b)=>'*').join('')
+    //    pas.value = m;
+    // }
+
+function pass(){
+    var x = pas.value;
+    console.log(x)
+   x = x.split('')
+console.log(x);
+var m = x.map((b)=>'*').join('')
+        pas.value = m;
+        var x = pas.value;
+
+}
+
+
+
+</script>
+</html>
